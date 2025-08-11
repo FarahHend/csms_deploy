@@ -1,14 +1,11 @@
 
 replicaCount: 1
-
 image:
   repository: app045/maintenance-service
-  tag: latest
+  tag: 6fdbf89
   pullPolicy: IfNotPresent
-
 service:
   port: 8080
-
 resources:
   limits:
     cpu: "1000m"
@@ -16,7 +13,6 @@ resources:
   requests:
     cpu: "500m"
     memory: "256Mi"
-
 nodeSelector: {}
 tolerations: []
 affinity: {}
