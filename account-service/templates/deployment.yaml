@@ -1,8 +1,8 @@
-
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: {{ include "account-service.fullname" . }}
+  namespace: {{ .Release.Namespace }}         # Added namespace here
   labels:
     app: {{ include "account-service.name" . }}
 spec:
