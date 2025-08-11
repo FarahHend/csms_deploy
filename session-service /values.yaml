@@ -1,1 +1,21 @@
+replicaCount: 1
 
+image:
+  repository: app045/session-service
+  tag: latest
+  pullPolicy: IfNotPresent
+
+service:
+  port: 8070
+
+resources:
+  limits:
+    cpu: "1000m"
+    memory: "512Mi"
+  requests:
+    cpu: "500m"
+    memory: "256Mi"
+
+nodeSelector: {}
+tolerations: []
+affinity: {}
