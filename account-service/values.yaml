@@ -2,7 +2,7 @@
 replicaCount: 1
 image:
   repository: app045/account-service
-  tag: 6fdbf89
+  tag: latest
   pullPolicy: IfNotPresent
 containerPort: 8004
 resources:
