@@ -1,0 +1,22 @@
+# values.yaml
+replicaCount: 1
+
+image:
+  repository: app045/account-service
+  tag: latest
+  pullPolicy: IfNotPresent
+
+containerPort: 8004
+
+resources:
+  requests:
+    cpu: "1000m"
+    memory: "512Mi"
+  limits:
+    cpu: "1000m"
+    memory: "512Mi"
+
+# Optional: Add node selector, tolerations, affinity if needed
+# nodeSelector: {}
+# tolerations: []
+# affinity: {}
