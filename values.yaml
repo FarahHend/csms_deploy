@@ -1,6 +1,6 @@
 # values.yaml
 
-accountManagementService:
+accountService:
   image:
     repository: app045/account-service
     tag: latest
