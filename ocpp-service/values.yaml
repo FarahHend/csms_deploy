@@ -2,7 +2,7 @@
 replicaCount: 1
 image:
   repository: app045/ocpp-service
-  tag: latest
+  tag: 9ec297f
   pullPolicy: IfNotPresent
 service:
   port: 8090
